@@ -1,0 +1,45 @@
+{
+  "name": "hello-module",
+  "version": "1.0.0",
+  "description": "hello module for everybody",
+  "main": "index.js",
+  "bin": {
+    "weather": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev --respawn ./src/index.ts --t=d6eb93f6de5e4c508f21fd2b9f165908 --c=Odessa",
+    "build": "tsc src/index.ts"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "boxen": "^5.1.2",
+    "chalk": "^4.1.2",
+    "cli-boxes": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "minimist": "^1.2.6",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/node-fetch": "^2.6.1",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "dedent-js": "^1.0.1",
+    "eslint": "^8.15.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "ts-node-dev": "^1.1.8"
+  }
+}
